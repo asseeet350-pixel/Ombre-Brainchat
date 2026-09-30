@@ -25,6 +25,7 @@ from . import plans
 from . import letters
 from . import hooks
 from . import buckets
+from . import xinchao_sidecar
 from . import import_api
 from . import github
 from . import embedding
@@ -47,6 +48,7 @@ _WEB_MODULES = (
     ("web.letters", letters.register),
     ("web.hooks", hooks.register),
     ("web.buckets", buckets.register),
+    ("web.xinchao_sidecar", xinchao_sidecar.register),
     ("web.import_api", import_api.register),
     ("web.github", github.register),
     ("web.embedding", embedding.register),
